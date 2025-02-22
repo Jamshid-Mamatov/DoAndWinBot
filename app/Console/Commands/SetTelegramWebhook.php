@@ -26,7 +26,7 @@ class SetTelegramWebhook extends Command
      */
     public function handle()
     {
-        $botToken = env('TELEGRAM_BOT_TOKEN');
+        $botToken = env('TELEGRAM_TOKEN');
         $webhookUrl = env('TELEGRAM_WEBHOOK_URL');
 
         if (!$botToken || !$webhookUrl) {
